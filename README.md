@@ -13,14 +13,14 @@ This Patient Management System is build to manage patient queues in a hospital. 
 
 ## Using the System
    The main functions that is created to manage the system:
-
-1. **Add New Patient** - Follow the prompts to enter patient details, and add them to the queue based on there priority.
+   
+      **void newPatient(PriorityQueue *pq)
    [<img src="https://github.com/Psychopass-crypto/Project-2/blob/main/newpatient.png"/>](https://github.com/Psychopass-crypto/Project-2/blob/main/newpatient.png)
 
-2. **Process Next Patient** - Automatically selects and processes the patient with the highest priority, and check in time.
+     **void processPatient(PriorityQueue *pq)
    [<img src="https://github.com/Psychopass-crypto/Project-2/blob/main/processpatient.png"/>](https://github.com/Psychopass-crypto/Project-2/blob/main/processpatient.png)
    
-3. **Update Patient Priority** - Enter the SSN of the patient to update and follow prompts to change their priority and task.
+    **void updatePatient(PriorityQueue *pq)
    [<img src="https://github.com/Psychopass-crypto/Project-2/blob/main/updatepatient.png"/>](https://github.com/Psychopass-crypto/Project-2/blob/main/updatepatient.png)
 
 
