@@ -20,14 +20,8 @@ The program operates in a menu-driven manner. Here are the options you will see:
 4. **Display All Patients** - Lists all the patients currently in the queue.
 5. **Exit** - Closes the application.
 
-## File Structure
-- `HospitalManagementSystem.c`: Contains the source code with all functionalities.
+
 
 ## Contributing
 Contributions to the Hospital Management System are welcome. Please ensure to update tests as appropriate.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Contact
-For support or queries, reach out via email at [support@example.com](mailto:support@example.com).
