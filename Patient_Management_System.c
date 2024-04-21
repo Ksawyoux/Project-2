@@ -48,10 +48,10 @@ int isSSNDuplicate(PriorityQueue *pq, const char *ssn)
     {
         if (strcmp(pq->elements[i].patient.ssn, ssn) == 0)
         {
-            return 1; // Duplicate SSN found
+            return 1; 
         }
     }
-    return 0; // No duplicate SSN
+    return 0; 
 }
 
 void upheap(PriorityQueue *pq, int index)
@@ -164,7 +164,7 @@ void newPatient(PriorityQueue *pq)
         element.priority = 5;
     }
 
-    element.timestamp = time(NULL); // Set the current time as timestamp
+    element.timestamp = time(NULL); 
     pq->elements[pq->size] = element;
     pq->size++;
     upheap(pq, pq->size - 1);
@@ -206,9 +206,9 @@ void updatePatient(PriorityQueue *pq)
         {
             printf("Enter new priority (1-Critical, 2-High, 3-Medium, 4-Low): ");
             scanf("%d", &pq->elements[i].priority);
-            getchar(); // Clear the buffer
+            getchar(); 
 
-            // Update the task based on the new priority
+           
             switch (pq->elements[i].priority)
             {
             case 1:
@@ -229,7 +229,7 @@ void updatePatient(PriorityQueue *pq)
                 break;
             }
 
-            pq->elements[i].timestamp = time(NULL); // Update timestamp for new priority
+            pq->elements[i].timestamp = time(NULL);
             upheap(pq, i);
             downheap(pq, i);
 
